@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7ac8ae;
+    padding: 0.1px;
+}
+
+.nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes {
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+
+}
