@@ -1,0 +1,8 @@
+ul.listaexperiencias {
+    text-decoration: none;
+    list-style-type: none;
+    max-width: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
