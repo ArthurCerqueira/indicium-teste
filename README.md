@@ -1,8 +1,3 @@
-Desafio vaga front-end indicium!
-App feito com React.
-Foi usado styled components para estilização.
-Foi usado Router para as rotas.
-
 
 # Getting Started with Create React App
 
