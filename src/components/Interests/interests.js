@@ -54,7 +54,7 @@ const Section = styled.section `
 const Titulos = styled.h1`
   display: flex;
   justify-content: center;
-  color: #bb86fc;;
+  color: #bb86fc;
   font-size: 35px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
