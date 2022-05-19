@@ -1,33 +1,53 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './Navbar.css'
-import logo from './logo.png'
-
+import logo from '../../assets/images/logo.png'
+import styled from 'styled-components'
 import Container from '../Container/Container'
+import './Navbar.css'
+
+const Options = styled.a`
+  text-decoration: none;
+  list-style-type: none;
+`
+
+const Nav = styled.nav `
+  display: flex;
+  justify-content: space-between;
+  background-color: #BB86FC;
+  padding: 0.1em;
+`
+
+const List = styled.ul`
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  gap: 1em;
+`
 
 const Navbar = () => {
   return (
-    <nav className='navbar'>
+    <Nav>
         <Container>
             <Link to ="/">
                 <img src={logo} alt="Arthur Cerqueira" />
             </Link>
-            <ul className='list'>
-                <li>
+            <List>
+                <Options>
                 <Link to="/">Início</Link> 
-                </li>
-                <li>
+                </Options>
+                <Options>
                 <Link to="/History">Minha História</Link>
-                </li>
-                <li>
+                </Options>
+                <Options>
                 <Link to="/Experiences">Minhas Experiencias</Link>
-                </li>
-                <li>
-                <Link to="/Interestings">Meus Interesses</Link>
-                </li>
-            </ul>
+                </Options>
+                <Options>
+                <Link to="/Interests">Meus Interesses</Link>
+                </Options>
+            </List>
         </Container>
-    </nav>
+    </Nav>
   )
 }
 

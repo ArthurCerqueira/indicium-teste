@@ -1,27 +1,32 @@
 import React from'react'
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './components/Home/home'
 import History from './components/History/history'
 import Experiences from './components/Experiences/experiences'
-import Interestings from './components/Interestings/interestings'
+import Interests from './components/Interests/interests'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-import './App.css'
+import GlobalStyle from './assets/styles/global'
+import Container from './components/Container/Container'
 
 
 const App = () => {   
     return (
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route exact path="/" element={<Home />} > </Route>
-                <Route path="/History" element={<History />} > </Route>
-                <Route path="/Experiences" element={<Experiences />} > </Route>
-                <Route path="/Interestings" element={<Interestings />} > </Route>
-            </Routes>
-            <Footer />
-        </Router>
-        
+        <>
+            <GlobalStyle />
+            <Router>
+                <Navbar />
+                <Container>
+                    <Routes>
+                        <Route exact path="/" element={<Home />} /> 
+                        <Route path="/History" element={<History />} />
+                        <Route path="/Experiences" element={<Experiences />} /> 
+                        <Route path="/Interests"  element={<Interests />} /> 
+                    </Routes>
+                </Container>
+                <Footer />
+            </Router> 
+        </>
     )
 }
 
